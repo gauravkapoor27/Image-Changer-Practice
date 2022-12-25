@@ -1,0 +1,45 @@
+body {
+  background-color: rgb(0, 0, 0);
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  height: 450px;
+  width: 600px;
+}
+
+img {
+  vertical-align: -webkit-baseline-middle;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  border: solid 1px rgb(255, 255, 255);
+  border-radius: 15px;
+}
+
+img.active {
+  visibility: visible;
+}
+
+.btn {
+  position: absolute;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  bottom: -20px;
+  height: 50px;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 15px;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+}
